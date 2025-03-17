@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <!-- Metadados da página -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cimaflix - Gerador de Ingressos</title>
@@ -9,11 +8,8 @@
     <link rel="icon" type="image/x-icon" href="Assets/favicon.jpeg" />
   </head>
   <body>
-    <!-- Container principal -->
     <div class="container">
       <h1>Cimaflix</h1>
-
-      <!-- Formulário para gerar o ingresso -->
       <form id="ticketForm">
         <label for="name">Nome:</label>
         <input type="text" id="name" placeholder="Nome Completo" required />
@@ -62,10 +58,13 @@
           </option>
         </select>
 
+        <!-- File input for image upload -->
+        <label for="userImage">Carregar Foto:</label>
+        <input type="file" id="userImage" accept="image/*" required />
+
         <button type="submit">Gerar Ingresso</button>
       </form>
 
-      <!-- Área de exibição do ingresso -->
       <div id="ticketDisplay" class="ticket">
         <div class="ticket-info">
           <h2>Ingresso Cimaflix!</h2>
@@ -84,16 +83,16 @@
             <strong>Preço do Ingresso:</strong> <span id="ticketPrice"></span>
           </p>
         </div>
-        <!-- Logo do Cimaflix -->
+        <!-- Placeholder for uploaded image -->
         <img
-          src="Assets/Images/absolute-cinema.jpeg"
-          alt="Cimaflix Logo"
-          class="ticket-logo"
+          id="ticketUserImage"
+          src="#"
+          alt="Foto do Usuário"
+          class="ticket-user-image"
         />
       </div>
     </div>
 
-    <!-- Script JavaScript -->
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,16 +1,16 @@
-/* Estilos gerais para o corpo da página */
+/* Estilos gerais */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Align items to the top */
-  min-height: 100vh; /* Use min-height instead of height */
+  align-items: flex-start;
+  min-height: 100vh;
   background-image: url('Assets/Images/cinema-background_2.png');
   background-size: cover;
   background-position: center;
-  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-y: auto;
 }
 
 .container {
@@ -20,22 +20,19 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 500px;
   text-align: center;
-  margin: 20px 0; /* Add margin to prevent content from touching the edges */
+  margin: 20px 0;
 }
 
-/* Estilos para o título */
 h1 {
   margin-bottom: 20px;
   color: #333;
 }
 
-/* Estilos para o formulário */
 form {
   display: flex;
   flex-direction: column;
 }
 
-/* Estilos para rótulos e campos de entrada */
 label {
   margin-bottom: 5px;
   font-weight: bold;
@@ -50,7 +47,6 @@ input, select, button {
   font-size: 16px;
 }
 
-/* Estilos para os campos de data de nascimento */
 .birthdate-fields {
   display: flex;
   gap: 10px;
@@ -60,7 +56,6 @@ input, select, button {
   flex: 1;
 }
 
-/* Estilos para o botão */
 button {
   background-color: #e50914;
   color: #fff;
@@ -72,7 +67,6 @@ button:hover {
   background-color: #b20710;
 }
 
-/* Estilos para o ticket */
 .ticket {
   margin-top: 20px;
   padding: 15px;
@@ -84,16 +78,16 @@ button:hover {
   display: flex;
   align-items: center;
   gap: 20px;
-  display: none; /* Esconde o ticket inicialmente */
+  display: none;
 }
 
-/* Estilos para o logo no ticket */
-.ticket-logo {
-  width: 150pt;
-  height: auto;
+.ticket-user-image {
+  width: 150px; /* Tamanho da imagem do usuário */
+  height: 150px;
+  border-radius: 20%; /* Formato circular */
+  object-fit: cover; /* Garante que a imagem cubra o espaço */
 }
 
-/* Estilos para as informações do ticket */
 .ticket-info {
   flex: 1;
 }
