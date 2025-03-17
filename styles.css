@@ -1,0 +1,108 @@
+/* Estilos gerais para o corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120vh;
+  background-image: url('Assets/Images/cinema-background_2.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Estilos para o container principal */
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  text-align: center;
+}
+
+/* Estilos para o título */
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Estilos para o formulário */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos para rótulos e campos de entrada */
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+input, select, button {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Estilos para os campos de data de nascimento */
+.birthdate-fields {
+  display: flex;
+  gap: 10px;
+}
+
+.birthdate-fields input {
+  flex: 1;
+}
+
+/* Estilos para o botão */
+button {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b20710;
+}
+
+/* Estilos para o ticket */
+.ticket {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  display: none; /* Esconde o ticket inicialmente */
+}
+
+/* Estilos para o logo no ticket */
+.ticket-logo {
+  width: 150pt;
+  height: auto;
+}
+
+/* Estilos para as informações do ticket */
+.ticket-info {
+  flex: 1;
+}
+
+.ticket h2 {
+  margin: 0 0 10px;
+  color: #e50914;
+}
+
+.ticket p {
+  margin: 5px 0;
+  color: #333;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- Metadados da página -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cimaflix - Gerador de Ingressos</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="Assets/favicon.jpeg" />
+  </head>
+  <body>
+    <!-- Container principal -->
+    <div class="container">
+      <h1>Cimaflix</h1>
+
+      <!-- Formulário para gerar o ingresso -->
+      <form id="ticketForm">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" placeholder="Nome Completo" required />
+
+        <label for="birthdate">Data de Nascimento:</label>
+        <div class="birthdate-fields">
+          <input
+            type="number"
+            id="day"
+            placeholder="Dia"
+            min="1"
+            max="31"
+            required
+          />
+          <input
+            type="number"
+            id="month"
+            placeholder="Mês"
+            min="1"
+            max="12"
+            required
+          />
+          <input type="number" id="year" placeholder="Ano" min="0" required />
+        </div>
+
+        <label for="ticketType">Tipo de Ingresso:</label>
+        <select id="ticketType" required>
+          <option value="Adulto">Adulto</option>
+          <option value="Infantil">Infantil</option>
+          <option value="Estudante">Estudante</option>
+          <option value="VIP">VIP</option>
+        </select>
+
+        <label for="movie">Escolha um Filme:</label>
+        <select id="movie" required>
+          <option value="Bit-Man: O Filme">Bit-Man: O Filme</option>
+          <option value="Soussa no Abstratoverso">
+            Soussa no Abstratoverso
+          </option>
+          <option value="Dr. Garfo">Dr. Garfo</option>
+          <option value="Certinho 2: O Retorno de Java">
+            Certinho 2: O Retorno de Java
+          </option>
+          <option value="Bogosort: A Ordenação Final">
+            Bogosort: A Ordenação Final
+          </option>
+        </select>
+
+        <button type="submit">Gerar Ingresso</button>
+      </form>
+
+      <!-- Área de exibição do ingresso -->
+      <div id="ticketDisplay" class="ticket">
+        <div class="ticket-info">
+          <h2>Ingresso Cimaflix!</h2>
+          <p><strong>Nome:</strong> <span id="ticketName"></span></p>
+          <p>
+            <strong>Data de Nascimento:</strong>
+            <span id="ticketBirthdate"></span>
+          </p>
+          <p><strong>Filme:</strong> <span id="ticketMovie"></span></p>
+          <p>
+            <strong>Tipo de Ingresso:</strong>
+            <span id="ticketTypeDisplay"></span>
+          </p>
+          <p><strong>ID do Ingresso:</strong> <span id="ticketId"></span></p>
+          <p>
+            <strong>Preço do Ingresso:</strong> <span id="ticketPrice"></span>
+          </p>
+        </div>
+        <!-- Logo do Cimaflix -->
+        <img
+          src="Assets/Images/absolute-cinema.jpeg"
+          alt="Cimaflix Logo"
+          class="ticket-logo"
+        />
+      </div>
+    </div>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
